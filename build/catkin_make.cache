@@ -1,0 +1,2 @@
+mpu
+-DCATKIN_DEVEL_PREFIX=/home/pi/mpu6050/devel -DCMAKE_INSTALL_PREFIX=/home/pi/mpu6050/install -G Unix Makefiles

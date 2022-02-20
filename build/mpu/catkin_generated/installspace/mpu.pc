@@ -1,0 +1,8 @@
+prefix=/home/pi/mpu6050/install
+
+Name: mpu
+Description: Description of mpu
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

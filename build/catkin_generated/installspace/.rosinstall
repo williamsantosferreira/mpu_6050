@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/mpu6050/install/setup.sh
