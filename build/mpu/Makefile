@@ -228,6 +228,21 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
+mpu/CMakeFiles/distance.dir/rule:
+	cd /home/pi/mpu6050/build && $(MAKE) -f CMakeFiles/Makefile2 mpu/CMakeFiles/distance.dir/rule
+.PHONY : mpu/CMakeFiles/distance.dir/rule
+
+# Convenience name for target.
+distance: mpu/CMakeFiles/distance.dir/rule
+
+.PHONY : distance
+
+# fast build rule for target.
+distance/fast:
+	cd /home/pi/mpu6050/build && $(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/build
+.PHONY : distance/fast
+
+# Convenience name for target.
 mpu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
 	cd /home/pi/mpu6050/build && $(MAKE) -f CMakeFiles/Makefile2 mpu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : mpu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
@@ -482,6 +497,33 @@ std_msgs_generate_messages_eus/fast:
 	cd /home/pi/mpu6050/build && $(MAKE) -f mpu/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mpu/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
+src/distance.o: src/distance.cpp.o
+
+.PHONY : src/distance.o
+
+# target to build an object file
+src/distance.cpp.o:
+	cd /home/pi/mpu6050/build && $(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/src/distance.cpp.o
+.PHONY : src/distance.cpp.o
+
+src/distance.i: src/distance.cpp.i
+
+.PHONY : src/distance.i
+
+# target to preprocess a source file
+src/distance.cpp.i:
+	cd /home/pi/mpu6050/build && $(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/src/distance.cpp.i
+.PHONY : src/distance.cpp.i
+
+src/distance.s: src/distance.cpp.s
+
+.PHONY : src/distance.s
+
+# target to generate assembly for a file
+src/distance.cpp.s:
+	cd /home/pi/mpu6050/build && $(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/src/distance.cpp.s
+.PHONY : src/distance.cpp.s
+
 src/mpu_node.o: src/mpu_node.cpp.o
 
 .PHONY : src/mpu_node.o
@@ -525,6 +567,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... distance"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -543,6 +586,9 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_eus"
+	@echo "... src/distance.o"
+	@echo "... src/distance.i"
+	@echo "... src/distance.s"
 	@echo "... src/mpu_node.o"
 	@echo "... src/mpu_node.i"
 	@echo "... src/mpu_node.s"

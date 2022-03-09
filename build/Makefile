@@ -337,6 +337,19 @@ geometry_msgs_generate_messages_eus/fast:
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named distance
+
+# Build rule for target.
+distance: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 distance
+.PHONY : distance
+
+# fast build rule for target.
+distance/fast:
+	$(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/build
+.PHONY : distance/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -583,6 +596,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_eus"
+	@echo "... distance"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"

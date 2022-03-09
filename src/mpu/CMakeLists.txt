@@ -207,3 +207,6 @@ include_directories(
 
 add_executable(mpu_node src/mpu_node.cpp)
 target_link_libraries(mpu_node ${catkin_LIBRARIES} -lwiringPi)
+
+add_executable(distance src/distance.cpp)
+target_link_libraries(distance ${catkin_LIBRARIES})

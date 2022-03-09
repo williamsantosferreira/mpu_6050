@@ -266,11 +266,11 @@ gtest/googlemock/preinstall: gtest/googlemock/gtest/preinstall
 # Target rules for target gtest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmock.dir/all
+gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=5,6 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -302,7 +302,7 @@ clean: gtest/googlemock/CMakeFiles/gmock_main.dir/clean
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=3,4 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -353,7 +353,7 @@ gtest/googlemock/gtest/preinstall:
 gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all: gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=9,10 "Built target gtest_main"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -385,7 +385,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 gtest/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=7,8 "Built target gtest"
 .PHONY : gtest/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -415,6 +415,7 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 
 # Convenience name for "all" pass in the directory.
 mpu/all: mpu/CMakeFiles/mpu_node.dir/all
+mpu/all: mpu/CMakeFiles/distance.dir/all
 
 .PHONY : mpu/all
 
@@ -423,6 +424,7 @@ mpu/clean: mpu/CMakeFiles/mpu_node.dir/clean
 mpu/clean: mpu/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 mpu/clean: mpu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 mpu/clean: mpu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+mpu/clean: mpu/CMakeFiles/distance.dir/clean
 mpu/clean: mpu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 mpu/clean: mpu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 mpu/clean: mpu/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -455,7 +457,7 @@ mpu/preinstall:
 mpu/CMakeFiles/mpu_node.dir/all:
 	$(MAKE) -f mpu/CMakeFiles/mpu_node.dir/build.make mpu/CMakeFiles/mpu_node.dir/depend
 	$(MAKE) -f mpu/CMakeFiles/mpu_node.dir/build.make mpu/CMakeFiles/mpu_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=9,10 "Built target mpu_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=11,12 "Built target mpu_node"
 .PHONY : mpu/CMakeFiles/mpu_node.dir/all
 
 # Include target in all.
@@ -578,6 +580,43 @@ mpu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean:
 
 # clean rule for target.
 clean: mpu/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target mpu/CMakeFiles/distance.dir
+
+# All Build rule for target.
+mpu/CMakeFiles/distance.dir/all:
+	$(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/depend
+	$(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/mpu6050/build/CMakeFiles --progress-num=1,2 "Built target distance"
+.PHONY : mpu/CMakeFiles/distance.dir/all
+
+# Include target in all.
+all: mpu/CMakeFiles/distance.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+mpu/CMakeFiles/distance.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/mpu6050/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 mpu/CMakeFiles/distance.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/mpu6050/build/CMakeFiles 0
+.PHONY : mpu/CMakeFiles/distance.dir/rule
+
+# Convenience name for target.
+distance: mpu/CMakeFiles/distance.dir/rule
+
+.PHONY : distance
+
+# clean rule for target.
+mpu/CMakeFiles/distance.dir/clean:
+	$(MAKE) -f mpu/CMakeFiles/distance.dir/build.make mpu/CMakeFiles/distance.dir/clean
+.PHONY : mpu/CMakeFiles/distance.dir/clean
+
+# clean rule for target.
+clean: mpu/CMakeFiles/distance.dir/clean
 
 .PHONY : clean
 

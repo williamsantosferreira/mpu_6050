@@ -45,6 +45,7 @@
 /home/pi/mpu6050/build/mpu/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir
 /home/pi/mpu6050/build/mpu/CMakeFiles/geometry_msgs_generate_messages_lisp.dir
 /home/pi/mpu6050/build/mpu/CMakeFiles/geometry_msgs_generate_messages_eus.dir
+/home/pi/mpu6050/build/mpu/CMakeFiles/distance.dir
 /home/pi/mpu6050/build/mpu/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 /home/pi/mpu6050/build/mpu/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 /home/pi/mpu6050/build/mpu/CMakeFiles/roscpp_generate_messages_py.dir
